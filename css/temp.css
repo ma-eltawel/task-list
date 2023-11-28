@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e004e;
+    font-family: 'Signika Negative', sans-serif;
+}
+.container{
+    width: 68%;
+    background-color: #f0f0f0;
+    margin-top: 80px;
+    border-radius: 6px;
+}
+.head{
+    background-color: #4c349b;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+.head h1{
+    display: inline;
+    color: white;
+}
+.head button{
+    float: right;
+    background-color: white;
+    margin-right: 10px;
+}
+button{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 5px rgb(168, 168, 168, 0.4);
+    cursor: pointer;
+}
+.content{
+    padding: 20px;
+}
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border-bottom: 1px solid #666;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+.task:hover{
+    box-shadow: 0 4px 15px rgb(96, 96, 96, 0.8);
+}
+.task-done{
+    background-color: #a0fea0;
+}
+.info h2{
+    margin: 0;
+}
+.date{
+    padding-top: 15px;
+}
+.date i{
+    color:#666;
+}
+.action button{
+    color: white;
+    margin-left: 20px;
+}
+.done{
+    background-color: #6bbb66;
+}
+.cancel{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkred;
+}
+.edit{
+    background-color: #4d86ff;
+}
+.del{
+    background-color: #f66b6b;
+}
+@media (max-width: 991px) {
+    .container{
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        width: 88%;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 580px) {
+    .container{
+        width: 96%;
+    }
+    .task{
+        flex-direction: column;
+        text-align: center;
+    }
+    .info, .action{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .date{
+        padding-top: 0;
+    }
+    .action{
+        justify-content: space-evenly;
+    }
+    .action button:first-child{
+        margin: 0;
+    }
+}
+@media (max-width: 416px) {
+    .container{
+        margin-top: 25px;
+    }
+    .head{
+        text-align: start;
+        padding-left: 10px;
+    }
+    .info{
+        flex-direction: column;
+        margin: 0 0 10px;
+    }
+}
