@@ -2,6 +2,6 @@
 
 **This project using html - css - javascript**
 
-![alt text](images/demo.jpeg)
+![alt text](demo.jpeg)
 
 **[Live Demo](https://ma-eltawel.github.io/task-list)**
